@@ -1,0 +1,12 @@
+\newcommand\clientname{Client A}
+\newcommand\clienttheme{EastLansing}
+
+\newcommand{\atest}
+{
+\vfill
+\begin{tikzpicture}[remember picture,overlay]
+ \node[xshift=-2cm,yshift=1cm] at (current page.south east){
+  \includegraphics[height=0.25in]{`r here::here("images", "test", "iClicker_logo.png")`"}
+ };
+\end{tikzpicture}
+}
