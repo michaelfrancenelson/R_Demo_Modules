@@ -1,0 +1,7 @@
+\frametitle{Input commands from external tex file}
+
+\input{C:/Users/michaelnelso/git/R_Demo_Modules/css/newcommands.tex}
+
+\texttt{knitr} can't process newcommands with arguments properly, they
+must be defined in an external tex file and then imported.
+
