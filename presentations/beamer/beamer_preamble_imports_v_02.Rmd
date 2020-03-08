@@ -8,7 +8,7 @@ output:
 header-includes:
   \input{`r here::here("css", "headers_tikz.tex")`}
 ---
-\input{`r here::here("css", "newcommands.tex")`}
+<!-- \input{`r here::here("css", "newcommands.tex")`} -->
 
 # new command within Rmd file
 \newcommand{\atest}

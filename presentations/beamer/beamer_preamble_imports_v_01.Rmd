@@ -1,6 +1,6 @@
 ---
 title: "importing files in the preamble"
-subtitle:  "Guide version 1"
+subtitle:  "Session 1"
 date: "`r format (Sys.time(), format='%Y-%m-%d %H:%M:%S %z')`"
 output:
   beamer_presentation:
@@ -13,14 +13,34 @@ header-includes:
 
 knitr can't process newcommands with arguments properly, they must be defined in an external tex file and then imported.
 
-\input{`r here::here("css", "newcommands.tex")`}
+<!-- \input{`r here::here("css", "newcommands.tex")`} -->
 
-# new command within Rmd file
-\newcommand{\atest} { and seven years ago }
+# new commands within Rmd file
+\newcommand{\atest} {fourscore}
+\newcommand{\attest} {and seven years ago}
+
+
 \atest
+
+
+\attest
 
 # new command from imported tex file
 
 This should plot a logo in the southeast corner of the slide.
+
+\logoSoutheast{`r here::here("images", "iClicker_logo.png")`}
+
+
+
+# new command from imported tex file
+
+\begin{enumerate}[1]
+\item AA
+\item BB
+\item CC
+\item DD
+\item All of 'em, Katie.
+\end{enumerate}
 
 \logoSoutheast{`r here::here("images", "iClicker_logo.png")`}
